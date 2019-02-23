@@ -63,6 +63,7 @@ class com.judgy.odhd.Mod {
 		
 		var scry:MovieClip = _root.scryprogress;
 		var progress:Number = scry.m_CurrentCount / scry.m_MaxCount * 100;
+		progress = Math.round(progress * 100) / 100; //round to x.xx%
 		
 		if (!m_textfield) {
 			var format:TextFormat = scry.m_TextField.getTextFormat();
